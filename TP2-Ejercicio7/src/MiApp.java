@@ -30,13 +30,13 @@ public class MiApp {
 			else
 				opcion = 2;
 
-			
-			
 			switch (opcion) {
-			
+
 			case 1:
-				if (remuneracion < 50000) {
-					System.out.println("CONDICIONAL - Usted será contratado de forma condicional");
+				if ((remuneracion < 50000) & (experiencia < 3)) {
+					System.out.println("CONTRATADO - Usted fue seleccionado para el puesto");
+				} else if ((remuneracion > 50000) & (experiencia > 6)) {
+					System.out.println("CONTRATADO - Usted fue seleccionado para el puesto");
 				} else {
 					System.out.println("RECHAZADO - Usted excede los valores de remuneración para el puesto");
 				}
@@ -47,13 +47,11 @@ public class MiApp {
 				if ((experiencia < 6) & (experiencia > 3)) {
 					System.out.println("CONDICIONAL - Usted será contratado de forma condicional");
 				} else {
-					System.out.println(
-							"RECHAZADO - Usted no cumple con los años de experiencia solicitados para el puesto");
+					System.out.println("RECHAZADO - Usted no cumple con los años de experiencia solicitados para el puesto");
 
 				}
 				break;
 			}
 		}
 	}
-
 }
