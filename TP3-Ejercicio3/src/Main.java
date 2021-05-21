@@ -44,7 +44,7 @@ public class Main {
 		System.out.println("=============================================================");
 		System.out.println("Total Recaudado Registro Automotor:\t "+ sumaTotalRecaudada);
 		System.out.println("=============================================================");
-		System.out.println("Porcentaje de Patentes con valor mayor a 1.300.000:  " +  contador);
+		System.out.println("Porcentaje de Patentes con valor mayor a 1.300.000:  " +  (double)contador*100 / (double)cantidadPatentes);
 		System.out.println("=============================================================");
 		
 	}
